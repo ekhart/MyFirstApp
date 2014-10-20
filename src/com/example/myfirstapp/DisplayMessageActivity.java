@@ -1,23 +1,30 @@
 package com.example.myfirstapp;
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.annotation.TargetApi;
+//import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 
-public class DisplayMessageActivity extends Activity {
+public class DisplayMessageActivity 
+	//extends Activity {
+	extends ActionBarActivity {	//nie zadzia³a³o
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_display_message);
 		// Show the Up button in the action bar.
-		setupActionBar();
+//		setupActionBar();
+		
+		ActionBar bar = getSupportActionBar();
+		bar.setDisplayHomeAsUpEnabled(true);
 		
 //		if (savedInstanceState == null) {
 //			getSupportFragmentManager()
