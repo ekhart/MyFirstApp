@@ -992,6 +992,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f05002f;
         public static final int action_mode_bar_stub=0x7f05002e;
         public static final int action_mode_close_button=0x7f050022;
+        public static final int action_search=0x7f050044;
         public static final int action_settings=0x7f050043;
         public static final int activity_chooser_view_content=0x7f050023;
         public static final int always=0x7f05000b;
@@ -1105,6 +1106,7 @@ containing a value of this type.
     public static final class menu {
         public static final int display_message=0x7f0c0000;
         public static final int main=0x7f0c0001;
+        public static final int main_activity_actions=0x7f0c0002;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1147,6 +1149,7 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
+        public static final int action_search=0x7f0a0014;
         public static final int action_settings=0x7f0a000e;
         public static final int app_name=0x7f0a000d;
         public static final int button_send=0x7f0a0010;
