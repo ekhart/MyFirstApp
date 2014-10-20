@@ -227,9 +227,16 @@ int drawable abc_textfield_searchview_holo_dark 0x7f020054
 int drawable abc_textfield_searchview_holo_light 0x7f020055
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020056
 int drawable abc_textfield_searchview_right_holo_light 0x7f020057
-int drawable ic_action_back 0x7f020058
-int drawable ic_action_search 0x7f020059
-int drawable ic_launcher 0x7f02005a
+int drawable action_tab_indicator 0x7f020058
+int drawable ic_action_back 0x7f020059
+int drawable ic_action_search 0x7f02005a
+int drawable ic_launcher 0x7f02005b
+int drawable tab_selected_example 0x7f02005c
+int drawable tab_selected_focused_example 0x7f02005d
+int drawable tab_selected_pressed_example 0x7f02005e
+int drawable tab_unselected_example 0x7f02005f
+int drawable tab_unselected_focused_example 0x7f020060
+int drawable tab_unselected_pressed_example 0x7f020061
 int id action_bar 0x7f05001a
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f050019
@@ -356,6 +363,7 @@ int style AppTheme 0x7f0b0080
 int style CustomActionBarTheme 0x7f0b0081
 int style MyActionBar 0x7f0b0082
 int style MyActionBarTabText 0x7f0b0084
+int style MyActionBarTabs 0x7f0b0085
 int style MyActionBarTitleText 0x7f0b0083
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0061
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f0b0069

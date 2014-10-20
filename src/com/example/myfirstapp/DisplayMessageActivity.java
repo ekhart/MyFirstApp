@@ -8,13 +8,11 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.annotation.TargetApi;
-//import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 
-public class DisplayMessageActivity 
-	//extends Activity {
-	extends ActionBarActivity {	//nie zadzia³a³o
+public class DisplayMessageActivity
+	extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

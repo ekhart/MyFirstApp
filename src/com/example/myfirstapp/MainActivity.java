@@ -1,7 +1,6 @@
 package com.example.myfirstapp;
 
 import android.os.Bundle;
-//import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -12,7 +11,6 @@ import android.widget.EditText;
 
 public class MainActivity 
 	extends ActionBarActivity {
-	//extends Activity {
 	
 	public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 

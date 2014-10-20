@@ -978,9 +978,16 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020056;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020057;
-        public static final int ic_action_back=0x7f020058;
-        public static final int ic_action_search=0x7f020059;
-        public static final int ic_launcher=0x7f02005a;
+        public static final int action_tab_indicator=0x7f020058;
+        public static final int ic_action_back=0x7f020059;
+        public static final int ic_action_search=0x7f02005a;
+        public static final int ic_launcher=0x7f02005b;
+        public static final int tab_selected_example=0x7f02005c;
+        public static final int tab_selected_focused_example=0x7f02005d;
+        public static final int tab_selected_pressed_example=0x7f02005e;
+        public static final int tab_unselected_example=0x7f02005f;
+        public static final int tab_unselected_focused_example=0x7f020060;
+        public static final int tab_unselected_pressed_example=0x7f020061;
     }
     public static final class id {
         public static final int action_bar=0x7f05001a;
@@ -1199,6 +1206,9 @@ containing a value of this type.
  The textColor property is backward compatibile with Support Library 
          */
         public static final int MyActionBarTabText=0x7f0b0084;
+        /**  ActionBar tabs styles 
+         */
+        public static final int MyActionBarTabs=0x7f0b0085;
         /**  ActionBar title text 
  The textColor property is backward compatibile with Support Library 
          */
