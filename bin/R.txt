@@ -120,6 +120,7 @@ int color abc_search_url_text_holo 0x7f070003
 int color abc_search_url_text_normal 0x7f070000
 int color abc_search_url_text_pressed 0x7f070002
 int color abc_search_url_text_selected 0x7f070001
+int color actionbar_text 0x7f070004
 int dimen abc_action_bar_default_height 0x7f080002
 int dimen abc_action_bar_icon_vertical_padding 0x7f080003
 int dimen abc_action_bar_stacked_max_height 0x7f080009
@@ -354,6 +355,8 @@ int style AppBaseTheme 0x7f0b007f
 int style AppTheme 0x7f0b0080
 int style CustomActionBarTheme 0x7f0b0081
 int style MyActionBar 0x7f0b0082
+int style MyActionBarTabText 0x7f0b0084
+int style MyActionBarTitleText 0x7f0b0083
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0061
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f0b0069
 int style TextAppearance_AppCompat_Base_SearchResult_Subtitle 0x7f0b006b
