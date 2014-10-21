@@ -21,8 +21,10 @@ public class DisplayMessageActivity
 		// Show the Up button in the action bar.
 //		setupActionBar();
 		
-		ActionBar bar = getSupportActionBar();
-		bar.setDisplayHomeAsUpEnabled(true);
+		//if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			ActionBar bar = getSupportActionBar();
+			bar.setDisplayHomeAsUpEnabled(true);			
+		//}
 		
 //		if (savedInstanceState == null) {
 //			getSupportFragmentManager()
