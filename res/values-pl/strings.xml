@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Pierwsza appka</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="edit_message">Wpisz wiadomość</string>
+    <string name="button_send">Wyślij</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_message">Moje wiadomości</string>
+    <string name="hello_world">Witaj świecie!</string>
+    <string name="action_search">Szukaj</string>
+    
+</resources>
