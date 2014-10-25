@@ -137,6 +137,37 @@ public class DisplayMessageActivity
 		
 	};
 	
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		//resumed -> destroyed
+		
+		//save activity state
+		//automatically save edittext, scroll etc
+		
+		
+//		savedInstanceState.putInt(STATE_SCORE, mCurrentScore);
+//		savedInstanceState.putInt(STATE_LEVEL, mCurrentLevel);
+		
+		super.onSaveInstanceState(outState);
+	};
+	
+	
+	static final String STATE_SCORE = "playerScore",
+			STATE_LEVEL = "playerLevel";
+	
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+		//created -> resumed
+		//same bundle as in onCreate
+		//dont need to check if bundle is null
+		
+//		super.onRestoreInstanceState(savedInstanceState);
+//		   
+//	    // Restore state members from saved instance
+//	    mCurrentScore = savedInstanceState.getInt(STATE_SCORE);
+//	    mCurrentLevel = savedInstanceState.getInt(STATE_LEVEL);
+	};
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
 	 */
