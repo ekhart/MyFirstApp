@@ -1,5 +1,6 @@
 package com.example.myfirstapp;
 
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,24 +9,32 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.annotation.TargetApi;
+import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 
 public class DisplayMessageActivity
 	extends ActionBarActivity {
 
+	//lifecycle 1.
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		//set the user interface layout for this Activity
+		//the layout file is defined in the procject res/layout/*.xml
 		setContentView(R.layout.activity_display_message);
+
 		// Show the Up button in the action bar.
-//		setupActionBar();
+		//setupActionBar();
 		
 		//if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			ActionBar bar = getSupportActionBar();
 			bar.setDisplayHomeAsUpEnabled(true);			
 		//}
 		
+		//for older version
 //		if (savedInstanceState == null) {
 //			getSupportFragmentManager()
 //				.beginTransaction()
@@ -44,7 +53,90 @@ public class DisplayMessageActivity
 		
 		setContentView(textView);
 	}
+	
+	//lifecycle 2.
+	@Override
+	protected void onStart() {
+		//activity visible
+		
+		LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+		boolean gpsEnabled = manager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+		if (!gpsEnabled) {
+			//create a dialog here thath requests the user to enable gps,
+			// and use an intent with the android.provider.settings.ACTION_LOCATION_SETTINGS
+			//action to take the user to the setting screen to enable
+			//gps when they click "ok"
+		}
+	};
+	
+	//lifecycle 3.
+	@Override
+	protected void onResume() {
+		//visible, active
+		
+		//activity become active, foreground
+		super.onResume();
+		
+//		if (mCamera == null) {
+//			initializeCamera();
+//		}
+	};
 
+	@Override 
+	protected void onPause() {
+		//resumed -> paused state (visible, inactive)
+		//perform clean up
+		
+		//ex: open dialog
+		//stop animations, commit changes (autosave), release resources
+		super.onPause();
+		
+//		if (mCamera != null) {
+//			mCamera.release();
+//			mCamera = null;
+//		}
+	};
+	
+	@Override
+	protected void onStop() {
+		//paused -> stopped (hidden)
+		//perform clean up
+		
+		//app switched, started to another by user
+		super.onStop();
+		
+		//Save the note's current draft, because the activity is stopping
+		//and we want to be sure the current note progress isnt lost
+//		ContentValues values = new ContentValues();
+//		values.put(Notepad.Notes.COLUMN_NAME_NOTE, getCurrentNoteText());
+//		values.put(Notepad.Notes.COLUMN_NAME_TITLE, getCurrentNoteTitle());
+//	
+//		getContentResolver().update(
+//				uri,		// uri for note to update 
+//				values, 	// map of column names and new values
+//				null, 		// no select criteria are used
+//				null);		// no where columns are used
+	};
+	
+	@Override
+	protected void onRestart() {
+		//stopped -> started //before onStart
+		
+		//app switched to this from another
+		super.onRestart();
+	};
+	
+	@Override
+	protected void onDestroy() {
+		//destroyed
+		//background thread, long-running resource - memory leak
+		super.onDestroy();
+		
+		//Stop method tracing that activity started during onCreate
+		android.os.Debug.stopMethodTracing();
+		
+	};
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
 	 */
