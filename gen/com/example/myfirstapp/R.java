@@ -1003,10 +1003,11 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f05002f;
         public static final int action_mode_bar_stub=0x7f05002e;
         public static final int action_mode_close_button=0x7f050022;
-        public static final int action_search=0x7f050044;
-        public static final int action_settings=0x7f050043;
+        public static final int action_search=0x7f050046;
+        public static final int action_settings=0x7f050045;
         public static final int activity_chooser_view_content=0x7f050023;
         public static final int always=0x7f05000b;
+        public static final int article_fragment=0x7f050044;
         public static final int beginning=0x7f050011;
         public static final int checkbox=0x7f05002b;
         public static final int collapseActionView=0x7f05000d;
@@ -1019,6 +1020,7 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050024;
         public static final int expanded_menu=0x7f05002a;
+        public static final int headlines_fragment=0x7f050043;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f050028;
@@ -1112,7 +1114,9 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030017;
         public static final int activity_display_message=0x7f030018;
         public static final int activity_main=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int article_view=0x7f03001a;
+        public static final int news_articles=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class menu {
         public static final int display_message=0x7f0c0000;
